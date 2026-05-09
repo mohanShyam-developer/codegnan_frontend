@@ -1,0 +1,181 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#111827);
+    font-family:Arial, sans-serif;
+}
+
+.wrapper{
+    text-align:center;
+    color:white;
+}
+
+h1{
+    margin-bottom:40px;
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+.switch{
+    position:relative;
+    width:170px;
+    height:80px;
+    display:inline-block;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    border-radius:80px;
+    cursor:pointer;
+    transition:0.6s;
+    overflow:hidden;
+    box-shadow:
+    0 0 20px rgba(0,0,0,0.5),
+    inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Hover Effect */
+.slider:hover{
+    transform:scale(1.05);
+    box-shadow:
+    0 0 30px #38bdf8,
+    0 0 60px rgba(56,189,248,0.5);
+}
+
+/* Circle */
+.circle{
+    position:absolute;
+    width:65px;
+    height:65px;
+    background:white;
+    border-radius:50%;
+    top:7px;
+    left:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    transition:0.6s;
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.7);
+}
+
+/* Stars */
+.stars span{
+    position:absolute;
+    width:5px;
+    height:5px;
+    background:white;
+    border-radius:50%;
+    opacity:0;
+    transition:0.6s;
+}
+
+.stars span:nth-child(1){
+    top:20px;
+    left:110px;
+}
+
+.stars span:nth-child(2){
+    top:35px;
+    left:140px;
+}
+
+.stars span:nth-child(3){
+    top:15px;
+    left:135px;
+}
+
+/* Cloud */
+.cloud{
+    position:absolute;
+    width:40px;
+    height:15px;
+    background:white;
+    border-radius:20px;
+    top:25px;
+    left:90px;
+    transition:0.6s;
+}
+
+.cloud::before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:50%;
+    top:-10px;
+    left:5px;
+}
+
+/* Text */
+.text{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:15px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.on{
+    left:25px;
+    color:#0f172a;
+}
+
+.off{
+    right:22px;
+    color:white;
+}
+
+/* Toggle ON */
+input:checked + .slider{
+    background:linear-gradient(135deg,#111827,#000000);
+}
+
+/* Move Circle */
+input:checked + .slider .circle{
+    transform:translateX(88px);
+    background:#facc15;
+    content:"🌙";
+}
+
+/* Moon */
+input:checked + .slider .circle{
+    color:#111827;
+}
+
+/* Show Stars */
+input:checked + .slider .stars span{
+    opacity:1;
+    box-shadow:0 0 10px white;
+}
+
+/* Hide Cloud */
+input:checked + .slider .cloud{
+    opacity:0;
+}
+
+/* Glow */
+input:checked + .slider:hover{
+    box-shadow:
+    0 0 30px #facc15,
+    0 0 60px rgba(250,204,21,0.5);
+}
