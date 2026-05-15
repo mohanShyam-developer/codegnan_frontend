@@ -1,0 +1,245 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif,sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    background-image:linear-gradient(
+         rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ), url("https://t3.ftcdn.net/jpg/16/62/87/80/360_F_1662878070_67kXZKPatjN21mDXrOhrr5ubiqAPgPsk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;   
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 80px; 
+     
+}
+.logo{
+    font-size: 25px;
+    color: orange;
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 120px;
+    cursor: pointer;
+}
+.navbar-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar-links a:hover{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+.book-table{
+    background-color: orange;
+    gap: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+}
+
+/* Hover effect */
+.book-table:hover{
+    transform: scale(1.1);
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    gap: 30px;
+}
+.hero-text{
+    flex: 1;
+}
+.hero-text h1{
+    font-size:60px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}.hero-text p{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero-text button{
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-text button:hover{
+    transform: scale(1.1);
+}
+.hero-image{
+    flex: 1;
+
+}
+.hero-image img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: rotateFood 40s linear infinite;
+    border: solid;
+    border-color: brown;
+}
+@keyframes rotateFood{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+.about{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px;
+    background-color: white;
+    color: black;
+}
+.about-image{
+    flex: 1;
+}
+.about-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about-text{
+    flex:1;
+}
+.about-text h1{
+    font-family: cursive;
+    color: orange;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about-text h3{
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom:10px;
+    color: black
+}
+
+.about-text p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.about-text button{
+    padding:15px 30px;
+    border:none;
+    background:#fea116;
+    color:black;
+    cursor:pointer;
+}
+.menu{
+    padding: 80px;
+    text-align: center;
+}
+.menu h3{
+    color: orange;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.menu h2{
+    font-size: 40px;
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+.menu-container{
+    display: flex;
+    gap: 30px;
+}
+.card{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card h3{
+    margin-top: 20px;
+    color: black;
+}
+.card p{
+    margin: 20px 0px;
+    color: orange;
+    font-size: 20px;
+}
+.chefs{
+    padding: 80px;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+.chefs h3{
+    color: orange;
+    font-family: cursive;
+}
+.chefs h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-family: cursive;
+}
+.chef-container{
+    display: flex;
+    gap: 30px;
+}
+.chef-card{
+    padding: 30px;
+    background-color: azure;
+    border-radius: 10px;
+    flex: 1;
+}
+.chef-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.footer{
+    padding: 80px;
+    background-color: rgb(22, 22, 73);
+}
+.footer p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}

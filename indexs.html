@@ -1,42 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced Toggle Switch</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        nav{
+            background-color:rgb(169, 231, 232);
+            height:50px;
+            text-align:center;
+            padding: 30px 1px 1px 1px;
+        }
+        nav>a{
+            color:white;
+            background:blue;
+            padding:10px;
+            border-radius:10%;
+            text-decoration:none;
+            margin: 10px;
+            display: inline-block;
+            position: relative;
+            top: -15px;
+        }
+        nav>a:hover{
+            transform: scale(1.5);
+            transition: all 1s;
+        }
+        .s1{
+            color:white;
+            text-align:center;
+            height:300px;
+            background-size:100% 100%;
+            padding:200px 1px 1px;
+            background-image:linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://img.magnific.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?semt=ais_hybrid&w=740&q=80');
+        }
+        .s2{
+            text-align:center;
+            padding:30px 3px;
+            height:200px;
+            background: yellow;
+        }
+        .s2>h1{
+            margin: 20px;
+            font-size: 40px;
+        }
+        .s2>div{
+            padding:10px;
+            display:inline-block;
+            border-radius:10px;
+            margin: 10px;
+        }
+        .s2>div:hover{
+            transform: scale(1.5);
+            transition: all 1s;
+        }
+        .s3{
+            text-align: center;
+            padding: 30px 2px;
+        }
+        .s3>div>img{
+            width: 100%;
+            height: 100%;
+        }
+        .s3>div>h3{
+            margin: 20px;
+            font-size: 40px;
+        }
+        .s3>div{
+            background: lightblue;
+            border: 1px solid blue;
+            width: 200px;
+            display: inline-block;
+            padding: 25px;
+            margin: 30px;
+            font-size: 0.8rem;
+        }
+        .s3>h1{
+            margin: 20px;
+            font-size: 40px;
+        }
+        .s4{
+            text-align: center;
+            background: rgb(211, 228, 234);
+            padding: 30px 2px;
+            line-height: 50px;
+        }
+        footer{
+            background: rgb(17,17,39);
+            text-align: center;
+            padding: 30px 2px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="wrapper">
-
-    
-    <h1>Day ON / OFF Switch</h1>
-
-    <label class="switch">
-      <input type="checkbox" id="toggle">
-
-      <div class="slider">
-
-        <div class="cloud"></div>
-
-        <div class="stars">
-          <span></span>
-          <span></span>
-          <span></span>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </nav>
+    <section class="s1">
+        <h1>Learn CSS Through Projects</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique est doloribus sed, fuga sequi ratione accusamus aut dolores corrupti autem atque distinctio hic, quibusdam laboriosam obcaecati vero cum provident laudantium!</p>
+    </section>
+    <section class="s2">
+        <h1>css colors</h1>
+        <div style="background:red">Red</div>
+        <div style="background:green">Green</div>
+        <div style="background:blue">Blue</div>
+        <div style="background:blueviolet">voilet</div>
+    </section>
+    <section class="s3">
+        <h1>Css box model</h1>
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/09/87/86/34/360_F_987863475_tH95T3xn47nWGcw6HwyJBjgqS5iSwzyg.jpg">
+            <h3>cardone</h3>
+            <p>this card demonstrates padding, margin, width, border in CSS</p>
         </div>
-
-        <div class="circle">
-          ☀
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/09/87/86/34/360_F_987863475_tH95T3xn47nWGcw6HwyJBjgqS5iSwzyg.jpg">
+            <h3>cardone</h3>
+            <p>this card demonstrates padding, margin, width, border in CSS</p>
         </div>
-
-        <div class="text on">ON</div>
-        <div class="text off">OFF</div>
-
-      </div>
-    </label>
-
-  </div>
-
+    </section>
+    <section class="s4">
+        <h1>CSS Fonts</h1>
+        <p class="font-weight:400">Light Font Weight - 300</p>
+        <p class="font-weight:700">Normal Font Weight - 400</p>
+        <p class="font-weight:1000">Bold Font Weight - 700</p>
+        <p>This paragraph demostrates line-height, letter-spacing, font-size and font-family properties in CSS</p>
+    </section>
+    <footer>
+        <h2>CSS Learning Project</h2>
+    </footer>
 </body>
 </html>
